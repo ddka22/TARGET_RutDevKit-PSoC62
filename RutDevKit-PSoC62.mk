@@ -36,7 +36,7 @@ ADDITIONAL_DEVICES:=
 # Default target core to CM4 if not already set
 CORE?=CM4
 # Basic architecture specific components
-COMPONENTS+=CAT1A
+COMPONENTS+=$(TARGET) CAT1 CAT1A
 
 ifeq ($(CORE),CM4)
 # Additional components supported by the target
